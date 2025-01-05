@@ -15,7 +15,8 @@ const projects = [
     id: "1",
     title: "Solana: Be Real.",
     description: "Capturing your authenticity and earn rewards.",
-    imageUrl: "/placeholder.svg?height=600&width=400",
+    imageUrl:
+      "https://res.cloudinary.com/dtdsi5sev/image/upload/v1736099912/wallpaper.jpg",
     link: "https://reality-check-five.vercel.app/",
   },
   {
@@ -23,7 +24,8 @@ const projects = [
     title: "Defi Application",
     description:
       "An application that provides robust features for wallet connectivity, token swapping, and real-time visualization of cryptocurrency prices",
-    imageUrl: "/placeholder.svg?height=600&width=400",
+    imageUrl:
+      "https://res.cloudinary.com/dtdsi5sev/image/upload/v1736100470/pexels-davidmcbee-730564_yjtpxr.jpg",
     link: "https://solana-defi-app.vercel.app/",
   },
   {
@@ -31,7 +33,8 @@ const projects = [
     title: "Get Together",
     description:
       "Getogether is a platform to help you manage your event in a better and more organised way! Categorizing your whole events into multiple sub-events and creating channels for that and groups to manage conversation among all event participants.",
-    imageUrl: "/placeholder.svg?height=600&width=400",
+    imageUrl:
+      "https://res.cloudinary.com/dtdsi5sev/image/upload/v1736100679/AdobeStock_273520711_Preview_tg7ztj.jpg",
     link: "https://getogether-ten.vercel.app/",
   },
   {
@@ -39,7 +42,8 @@ const projects = [
     title: "Solana Counter",
     description:
       "A counter that you can increment by signing in using your wallet.",
-    imageUrl: "/placeholder.svg?height=600&width=400",
+    imageUrl:
+      "https://res.cloudinary.com/dtdsi5sev/image/upload/v1736101638/coolcat_bmw1q8.jpg",
     link: "https://solana-counter-sand.vercel.app/",
   },
 ];
