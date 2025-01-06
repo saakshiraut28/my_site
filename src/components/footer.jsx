@@ -21,11 +21,11 @@ export const Footer = () => {
 
   return (
     <div className="lg:flex flex-1 justify-center lg:justify-between items-center border-gray-200 bg-clip-padding bg-gray-400 bg-opacity-10 backdrop-blur-sm backdrop-filter my-2 px-2 lg:px-8 py-2 border rounded-md w-full font-Poppins">
-      <div className="flex justify-center items-center gap-2 my-1">
+      <div className="md:flex flex-1 justify-center md:justify-start items-center gap-2 my-1">
         <span>Reach out at: </span>
         <button
           onClick={copyToClipboard}
-          className="flex items-center gap-2 hover:text-indigo-500 transition-colors duration-200"
+          className="flex items-center gap-2 text-[12px] md:text-sm hover:text-indigo-500 transition-colors duration-200"
         >
           {email}
           {copied ? (

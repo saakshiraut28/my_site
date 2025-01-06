@@ -20,8 +20,8 @@ const experiences = [
   {
     id: "1",
     company: "Codemugg.",
-    position: "Developer & Devrel",
-    period: "Jan 2020 - March 2022",
+    position: "Devrel",
+    period: "Jan'20 - March'22",
     description:
       "Collaborated closely with developers and the founders to simplify technical concepts and improve product understanding. Also worked on the frontend and backend of the site.",
     skills: ["React", "Next.js", "TypeScript", "Redux", "Tailwind CSS"],
@@ -42,14 +42,14 @@ export default function Experience() {
             onClick={() => setExpandedId(expandedId === exp.id ? null : exp.id)}
           >
             <CardHeader>
-              <div className="flex justify-between items-start">
+              <div className="md:flex flex-1 justify-between items-start">
                 <div>
                   <CardTitle className="mb-1 text-lg">{exp.position}</CardTitle>
                   <CardDescription className="text-md">
                     {exp.company}
                   </CardDescription>
                 </div>
-                <Badge variant="secondary" className="text-sm">
+                <Badge variant="secondary" className="my-2 md:my-0 text-sm">
                   <Calendar className="mr-1 w-4 h-4" />
                   {exp.period}
                 </Badge>

@@ -69,7 +69,7 @@ export default function Showcase() {
 
   return (
     <section className="relative mx-auto px-2 lg:px-8 py-16 container">
-      <div className="flex justify-between items-center">
+      <div className="md:flex flex-1 justify-between items-center">
         <h2 className="mb-8 font-bold text-xl">Projects</h2>
         <Link href="/#">
           <h2 className="mb-8 font-medium text-md hover:text-indigo-500 hover:underline">
@@ -86,7 +86,7 @@ export default function Showcase() {
           {projects.map((project) => (
             <motion.div
               key={project.id}
-              className="flex-none mx-2 snap-start w-[calc(30%-1rem)]"
+              className="flex-none mx-2 snap-start w-[calc(70%-1rem)] md:w-[calc(30%-1rem)]"
               whileHover={{ y: -5 }}
               transition={{ duration: 0.3 }}
               onHoverStart={() => setHoveredId(project.id)}

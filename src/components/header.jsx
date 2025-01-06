@@ -7,7 +7,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 export const Header = () => {
   return (
     <div>
-      <div className="flex justify-center my-16 px-2 lg:px-8">
+      <div className="lg:flex flex-1 justify-center my-16 px-2 lg:px-8 glex">
         <div className="flex-1 w-full lg:w-1/2">
           <p className="font-semibold">Hi, I’m a developer from India.</p>
           <p className="py-2">
@@ -25,7 +25,7 @@ export const Header = () => {
           </p>
           <p>PS: You might find me in a room full of cats.</p>
         </div>
-        <div className="w-1/2">
+        <div className="lg:block hidden w-1/2">
           <DotLottieReact
             src="https://lottie.host/8dc516dc-66af-4c1f-8d82-a8935a9f806d/PoGOL5TP7d.lottie"
             loop
