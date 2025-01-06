@@ -9,11 +9,13 @@ import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "./ui/separator";
+import { Badge } from "./ui/badge";
 
 const projects = [
   {
     id: "1",
     title: "Solana: Be Real.",
+    stack: ["Next.js", "Anchor", "Solana", "Web3.js", "Tailwind"],
     description: "Capturing your authenticity and earn rewards.",
     imageUrl:
       "https://res.cloudinary.com/dtdsi5sev/image/upload/v1736099912/wallpaper.jpg",
@@ -22,6 +24,7 @@ const projects = [
   {
     id: "2",
     title: "Defi Application",
+    stack: ["CoinGecko API", "Next.js", "Web3.js"],
     description:
       "An application that provides robust features for wallet connectivity, token swapping, and real-time visualization of cryptocurrency prices",
     imageUrl:
@@ -31,6 +34,7 @@ const projects = [
   {
     id: "3",
     title: "Get Together",
+    stack: ["Next.js", "Prisma", "Mongo DB", "Shadcn"],
     description:
       "Getogether is a platform to help you manage your event in a better and more organised way! Categorizing your whole events into multiple sub-events and creating channels for that and groups to manage conversation among all event participants.",
     imageUrl:
@@ -40,6 +44,7 @@ const projects = [
   {
     id: "4",
     title: "Solana Counter",
+    stack: ["Solana", "Rust", "Anchor", "Web3.js", "Vite"],
     description:
       "A counter that you can increment by signing in using your wallet.",
     imageUrl:
@@ -67,8 +72,8 @@ export default function Showcase() {
       <div className="flex justify-between items-center">
         <h2 className="mb-8 font-bold text-xl">Projects</h2>
         <Link href="/#">
-          <h2 className="font-medium text-indigo-500 text-md hover:underline">
-            Checkout Github
+          <h2 className="mb-8 font-medium text-md hover:text-indigo-500 hover:underline">
+            Checkout more projects on Github
           </h2>
         </Link>
       </div>
@@ -108,14 +113,18 @@ export default function Showcase() {
                     }}
                   />
                   <div className="absolute inset-0 flex flex-col justify-end p-4">
-                    {/* Added a semi-transparent overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
-
-                    {/* Content container with fixed heights */}
                     <div className="relative z-10">
-                      <h3 className="mb-2 line-clamp-1 h-8 font-semibold text-white text-xl">
+                      <h3 className="line-clamp-1 h-8 font-semibold text-white text-xl">
                         {project.title}
                       </h3>
+                      <div className="flex flex-wrap gap-2 text-white">
+                        {project.stack.map((stack, index) => (
+                          <Badge key={index} variant="outline text-white">
+                            {stack}
+                          </Badge>
+                        ))}
+                      </div>
                       <p
                         className={`text-sm text-gray-200 transition-all duration-300 h-20 overflow-hidden ${
                           hoveredId === project.id

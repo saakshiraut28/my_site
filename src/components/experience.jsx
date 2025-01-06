@@ -4,6 +4,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
   Card,
   CardContent,
@@ -78,9 +79,16 @@ export default function Experience() {
           </Card>
         ))}
         <div className="flex justify-center">
-          <Button>
-            Resume <ScanSearch size={20} color="#fff" strokeWidth={2} />
-          </Button>
+          <Link
+            href="/Saakshi_Raut_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="flex items-center gap-2 hover:bg-indigo-500 transition-colors">
+              Resume
+              <ScanSearch size={20} color="#fff" strokeWidth={2} />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

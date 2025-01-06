@@ -7,17 +7,23 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 export const Header = () => {
   return (
     <div>
-      <div className="flex justify-center px-2 lg:px-8 pt-8">
+      <div className="flex justify-center my-16 px-2 lg:px-8">
         <div className="flex-1 w-full lg:w-1/2">
-          <p>Hello</p>
+          <p className="font-semibold">Hi, I’m a developer from India.</p>
           <p className="py-2">
-            A web developer who can design and develop amazing websites for you,
-            like the one you are currently viewing ;)
+            I’ve been building projects around Solana Blockchain and AI while
+            sharing my knowledge through blogs and content to make Solana easier
+            to understand.
           </p>
           <p className="py-2">
-            And I love building cool stuff, and currently, I'm working on some
-            Web3 projects.
+            With experience in UI/UX design and web development, I enjoy
+            creating seamless and impactful applications.
           </p>
+          <p className="py-2">
+            I’m actively seeking opportunities in DevRel or Developer roles
+            within the Web3 space 🤝
+          </p>
+          <p>PS: You might find me in a room full of cats.</p>
         </div>
         <div className="w-1/2">
           <DotLottieReact

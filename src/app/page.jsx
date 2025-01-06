@@ -1,5 +1,5 @@
 /** @format */
-
+"use client";
 import Experience from "@/components/experience";
 import { Header } from "@/components/header";
 import { Navbar } from "@/components/navbar";
