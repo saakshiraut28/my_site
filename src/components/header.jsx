@@ -9,7 +9,7 @@ export const Header = () => {
     <div>
       <div className="lg:flex flex-1 justify-center my-16 px-2 lg:px-8 glex">
         <div className="flex-1 w-full lg:w-1/2">
-          <p className="font-semibold">Hi, I’m a developer from India.</p>
+          <p className="font-semibold">Hi, I’m a developer.</p>
           <p className="py-2">
             I’ve been building projects around Solana Blockchain and AI while
             sharing my knowledge through blogs and content to make Solana easier
