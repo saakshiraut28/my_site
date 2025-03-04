@@ -2,8 +2,6 @@
 "use client";
 import React, { useState } from "react";
 import { Check } from "lucide-react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 
 export const Footer = () => {
   const [copied, setCopied] = useState(false);

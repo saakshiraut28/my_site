@@ -19,6 +19,15 @@ import { Button } from "./ui/button";
 const experiences = [
   {
     id: "1",
+    company: "Okto.",
+    position: "Devrel Intern",
+    period: "Feb'25 - Present",
+    description:
+      "Developed comprehensive technical documentation for the Okto SDK, streamlining the developer onboarding process. And Created template applications to demonstrate seamless integration and best practices for utilizing the Okto SDK.",
+    skills: ["React", "Okto-Sdk", "TypeScript", "Tailwind CSS", "Web3"],
+  },
+  {
+    id: "2",
     company: "Codemugg.",
     position: "Devrel",
     period: "Jan'20 - March'22",

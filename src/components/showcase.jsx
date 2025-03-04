@@ -8,7 +8,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Separator } from "./ui/separator";
 import { Badge } from "./ui/badge";
 
 const projects = [
