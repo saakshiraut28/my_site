@@ -20,7 +20,7 @@ const experiences = [
   {
     id: "1",
     company: "Okto.",
-    position: "Devrel Intern",
+    position: "Technical Writer",
     period: "Feb'25 - Present",
     description:
       "Developed comprehensive technical documentation for the Okto SDK, streamlining the developer onboarding process. And Created template applications to demonstrate seamless integration and best practices for utilizing the Okto SDK.",
